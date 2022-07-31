@@ -1,7 +1,7 @@
 
 package com.portfolio.portfolio.controller;
 
-import com.portfolio.portfolio.model.Persona;
+import com.portfolio.portfolio.entity.Persona;
 import com.portfolio.portfolio.service.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class PersonaController {
     
     @GetMapping ("/personas/traer")
     public List<Persona> getPersonas(){
-        return interPersona.getPersonas();      
+        return interPersona.getPersona();      
     }
     
     @PostMapping ("/personas/crear")

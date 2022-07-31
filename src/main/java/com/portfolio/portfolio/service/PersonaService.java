@@ -1,19 +1,22 @@
 
 package com.portfolio.portfolio.service;
 
-import com.portfolio.portfolio.model.Persona;
+import com.portfolio.portfolio.entity.Persona;
 import com.portfolio.portfolio.repository.PersonaRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class PersonaService implements IPersonaService {
+    
     @Autowired
     public PersonaRepository persoRepository;
     
     @Override
-    public List<Persona> getPersonas(){
+    public List<Persona> getPersona(){
         return persoRepository.findAll();
     }
     

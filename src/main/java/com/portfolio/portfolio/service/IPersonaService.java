@@ -1,13 +1,13 @@
 
 package com.portfolio.portfolio.service;
 
-import com.portfolio.portfolio.model.Persona;
+import com.portfolio.portfolio.entity.Persona;
 import java.util.List;
 
 
 public interface IPersonaService {
     
-    public List<Persona> getPersonas ();
+    public List<Persona> getPersona();
     
     public void crearPersona (Persona perso);   
           
