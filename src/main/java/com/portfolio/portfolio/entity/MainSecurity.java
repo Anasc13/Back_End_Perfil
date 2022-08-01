@@ -1,4 +1,4 @@
-package com.portfolio.portfolio;
+package com.portfolio.portfolio.entity;
 
 
 

@@ -5,36 +5,42 @@ import com.portfolio.portfolio.entity.Education;
 import com.portfolio.portfolio.service.IEducationService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin
+@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 @RestController
+@RequestMapping(value = "/education")
 public class EducationController {
     
     @Autowired 
     private IEducationService interEducation;
     
-    @GetMapping ("/education/traer")
+    @GetMapping ("/traer")
     public List<Education> getEducation(){
         return interEducation.getEducation();      
     }
     
-    @PostMapping ("/education/crear")
+    @PostMapping ("/crear")
     public void agregarEducation(@RequestBody Education edu) {
         interEducation.crearEducation(edu);
     }
     
-    @DeleteMapping ("/educationborrar/{id}")
+    @DeleteMapping ("/borrar/{id}")
     public void borrarEducation (@PathVariable Long id) {
         interEducation.deleteEducation(id);
     }
         
-    @PutMapping ("/education/editar/")
+    @PutMapping ("/editar/")
     public void editarEducation (@RequestBody Education edu){
         interEducation.crearEducation(edu);
     }
