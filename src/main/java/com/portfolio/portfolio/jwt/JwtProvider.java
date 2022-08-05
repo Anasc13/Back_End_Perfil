@@ -1,7 +1,7 @@
 
 package com.portfolio.portfolio.jwt;
 
-import com.portfolio.portfolio.entity.UsuarioMain;
+import com.portfolio.portfolio.UsuarioMain;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

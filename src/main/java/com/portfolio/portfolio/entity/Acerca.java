@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Acerca {
+public class Acerca  {
     
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE)

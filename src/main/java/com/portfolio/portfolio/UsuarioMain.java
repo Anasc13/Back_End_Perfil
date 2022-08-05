@@ -1,6 +1,7 @@
 
-package com.portfolio.portfolio.entity;
+package com.portfolio.portfolio;
 
+import com.portfolio.portfolio.entity.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

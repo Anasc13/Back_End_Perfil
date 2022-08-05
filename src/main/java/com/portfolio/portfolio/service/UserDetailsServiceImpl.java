@@ -2,7 +2,7 @@
 package com.portfolio.portfolio.service;
 
 import com.portfolio.portfolio.entity.Usuario;
-import com.portfolio.portfolio.entity.UsuarioMain;
+import com.portfolio.portfolio.UsuarioMain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
