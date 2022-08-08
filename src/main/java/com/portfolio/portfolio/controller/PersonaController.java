@@ -38,7 +38,7 @@ public class PersonaController {
         interPersona.deletePersona(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarPersona (@RequestBody Persona perso){
         interPersona.crearPersona(perso);
     }

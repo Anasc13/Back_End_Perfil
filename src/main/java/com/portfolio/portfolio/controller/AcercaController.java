@@ -38,7 +38,7 @@ public class AcercaController {
         interAcerca.deleteAcerca(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarAcerca (@RequestBody Acerca acer){
         interAcerca.crearAcerca(acer);
     }

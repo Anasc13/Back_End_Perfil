@@ -38,7 +38,7 @@ public class SkillsController {
         interSkills.deleteSkills(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarSkills (@RequestBody Skills ski){
         interSkills.crearSkills(ski);
     }

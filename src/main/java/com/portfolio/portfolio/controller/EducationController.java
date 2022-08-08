@@ -38,7 +38,7 @@ public class EducationController {
         interEducation.deleteEducation(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarEducation (@RequestBody Education edu){
         interEducation.crearEducation(edu);
     }

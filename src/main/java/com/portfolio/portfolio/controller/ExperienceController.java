@@ -38,7 +38,7 @@ public class ExperienceController {
         interExperience.deleteExperience(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarExperience (@RequestBody Experience expe){
         interExperience.crearExperience(expe);
     }

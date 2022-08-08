@@ -38,7 +38,7 @@ public class ProyectosController {
         interProyectos.deleteProyecto(id);
     }
         
-    @PutMapping ("/editar/")
+    @PutMapping ("/editar")
     public void editarProyecto(@RequestBody Proyectos proy){
         interProyectos.crearProyecto(proy);
     }
