@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "https://portfolio-8b019.web.app/experience")
+@CrossOrigin(origins = "https://portfolio-8b019.web.app/portfolio/experience")
 @RestController
 @RequestMapping(value = "/experience")
 public class ExperienceController {
