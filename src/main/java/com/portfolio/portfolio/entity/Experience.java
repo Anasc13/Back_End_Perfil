@@ -19,21 +19,21 @@ public class Experience {
     private String company;
     private String img;
     private String mode;
-   private String añocomienzo;
-    private String añofinal;
+    private String start;
+    private String end;
     private String timeElapsed;
 
     public Experience() {
     }
 
-    public Experience(Long id, String position, String company, String img, String mode, String añocomienzo, String añofinal, String timeElapsed) {
+    public Experience(Long id, String position, String company, String img, String mode, String start, String end, String timeElapsed) {
         this.id = id;
         this.position = position;
         this.company = company;
         this.img = img;
         this.mode = mode;
-        this.añocomienzo = añocomienzo;
-        this.añofinal = añofinal;
+        this.start = start;
+        this.end = end;
         this.timeElapsed = timeElapsed;
     }
     

@@ -19,21 +19,21 @@ public class Education {
     private String img;
     private String career;
     private String score;
-    private String añocomienzo;
-    private String añofinal;
+    private String start;
+    private String end;
 
     public Education() {
     }
 
-    public Education(Long id, String school, String title, String img, String career, String score, String añocomienzo, String añofinal) {
+    public Education(Long id, String school, String title, String img, String career, String score, String start, String end) {
         this.id = id;
         this.school = school;
         this.title = title;
         this.img = img;
         this.career = career;
         this.score = score;
-        this.añocomienzo = añocomienzo;
-        this.añofinal = añofinal;
+        this.start = start;
+        this.end = end;
     }
 
     

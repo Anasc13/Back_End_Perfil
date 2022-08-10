@@ -18,20 +18,20 @@ public class Proyectos {
     private String img;
     private String name;
     private String description;
-    private String añocomienzo;
-    private String añofinal;
+    private String start;
+    private String end;
     private String link;
 
     public Proyectos() {
     }
 
-    public Proyectos(Long id, String img, String name, String description, String añocomienzo, String añofinal, String link) {
+    public Proyectos(Long id, String img, String name, String description, String start, String end, String link) {
         this.id = id;
         this.img = img;
         this.name = name;
         this.description = description;
-        this.añocomienzo = añocomienzo;
-        this.añofinal = añofinal;
+        this.start = start;
+        this.end = end;
         this.link = link;
     }
     
