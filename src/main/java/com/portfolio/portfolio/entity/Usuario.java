@@ -1,6 +1,7 @@
 
 package com.portfolio.portfolio.entity;
 
+import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
@@ -10,7 +11,7 @@ import java.util.Set;
  * Clase para la base de datos
  */
 @Entity
-public class Usuario {
+public class Usuario implements Serializable {
     //Id de la tabla
     @Id
     //Id Auto Increment

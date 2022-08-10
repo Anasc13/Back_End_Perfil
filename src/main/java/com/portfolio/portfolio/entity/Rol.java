@@ -2,11 +2,12 @@
 package com.portfolio.portfolio.entity;
 
 import com.portfolio.portfolio.enums.RolNombre;
+import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Rol {
+public class Rol implements Serializable {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private int id;
